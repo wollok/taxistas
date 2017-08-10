@@ -1,0 +1,30 @@
+import pasajeros.*
+import taxistas.*
+
+describe "test de taxistas " {
+
+	method crearPasajero(edadQueTiene, edadParaSerViejo) =
+	object {
+		method edad() = edadQueTiene
+		method esJoven() = self.edad() < edadParaSerViejo
+	}
+
+	method crearAdriel() = self.crearPasajero(35, 40)
+	method crearJuana() = self.crearPasajero(21, 20)
+
+	test "Saber si Daniel lleva a Juana" {
+		const juana = self.crearJuana()
+		assert.that(daniel.llevaA(juana))
+	}
+
+	test "Saber si Alejandro lleva a Juana" {
+		const juana = self.crearJuana()
+		assert.that(alejandro.llevaA(juana))
+	}
+
+	test "Saber si Alejandro lleva a Adriel" {
+		const adriel = self.crearAdriel()
+		assert.that(alejandro.llevaA(adriel))
+	}
+
+}

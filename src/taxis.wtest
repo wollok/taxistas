@@ -10,15 +10,15 @@ describe "test de taxistas " {
 	}
 
 	method crearAdriel() = self.crearPasajero(35, 40)
-	method crearJuanita() = self.crearPasajero(26, 20)
+	method crearJuanota() = self.crearPasajero(26, 20)
 
 	test "Saber si Daniel lleva a Juana" {
-		const juana = self.crearJuanita()
+		const juana = self.crearJuanota()
 		assert.that(daniel.llevaA(juana))
 	}
 
 	test "Saber si Alejandro lleva a Juana" {
-		const juana = self.crearJuanita()
+		const juana = self.crearJuanota()
 		assert.that(alejandro.llevaA(juana))
 	}
 

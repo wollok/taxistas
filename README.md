@@ -1,4 +1,7 @@
 # Taxistas
+ 
+[![Build Status](https://travis-ci.org/wollok/taxistasStubs.svg?branch=master)](https://travis-ci.org/wollok/taxistasStubs)
+
 
 Este ejemplo corresponde a una segunda clase de introducción a Wollok, donde se muestran los siguientes conceptos
 
